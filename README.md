@@ -3,7 +3,7 @@ Roku-HDHomerun
 
 Watch TV on your Roku using your HDHomerun PRIME and Wallop!
 
-The HDHomerun PRIME (hdhr3-cc) supports HTTP Live Streaming (HLS).  Unfortunately it is an MPEG2 stream and the Roku cannot decode it.  Fortunately, [maddox](https://github.com/maddox) has created a transcoding application called [Wallop](https://github.com/maddox/wallop) to convert the MPEG2 stream to H.264 and serve it up live over HLS using ffmpeg.  Thanks to his work, I was able to easily create a Roku app to stream from [Wallop](https://github.com/maddox/wallop).
+The HDHomerun PRIME (hdhr3-cc) supports streaming over HTTP.  Unfortunately it is an MPEG2 stream and the Roku cannot decode it.  Fortunately, [maddox](https://github.com/maddox) has created a transcoding application called [Wallop](https://github.com/maddox/wallop) to convert the MPEG2 stream to H.264 and serve it up live over HLS using ffmpeg.  Thanks to his work, I was able to easily create a Roku app to stream from [Wallop](https://github.com/maddox/wallop).
 
 ![Screenshot](http://i.imgur.com/GJUiye0.png)
 

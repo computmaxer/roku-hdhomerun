@@ -13,12 +13,6 @@ Sub Main(args As Dynamic)
     'Initialize theme attributes like titles, logos and overhang color
     initTheme()
 
-    ' if type(args) = "roAssociativeArray" and type(args.url) = "roString" then
-    '     displayVideo(args)
-    ' end if
-    ' print "Type args = "; type(args)
-    ' print "Type args.url = "; type(args.url)
-
     'Has to live for the duration of the whole app to prevent flashing
     'back to the roku home screen.
     screenFacade = CreateObject("roPosterScreen")

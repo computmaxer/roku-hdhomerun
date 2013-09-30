@@ -49,18 +49,25 @@ Function showGridScreen(screen As Object) As string
                 print "list item selected row= "; row; " selection= "; selection
 
                 ' Did we get a selection from settings row?
-                if (row = 2)
-                    ' open settings screen
-                    print "Settings screen opened"
-                    showSettingsScreen()
-                    return "yes"
+                if categoryList.count() = 1 then
+                    if row = 0 then
+                        ' open settings screen
+                        print "Settings screen opened"
+                        showSettingsScreen()
+                        return "yes"
+                    end if
+                else if row = 2 then
+                        ' open settings screen
+                        print "Settings screen opened"
+                        showSettingsScreen()
+                        return "yes"
                 else
                     chanNum = showArray[row][selection].chanNum
                     print "Getting ready to view chanNum="; chanNum
                     tuneChannel(chanNum)
                     displayVideo(chanNum, "")
                     return "yes"
-                endif
+                end if
 
             else if msg.isScreenClosed() then
                 return ""

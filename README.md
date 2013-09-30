@@ -23,5 +23,5 @@ SiliconDust has announced a new generation of network TV tuners, hdhr4, that hav
 #FAQ#
 
 ###Does this work with the HDHomerun Dual TV tuner?###
-No. Sorry. :(  The Dual (hdhr3-us) does not have the ability to do HLS streaming, and SiliconDust has said it will never be able to have this ability due to hardware limitations.  You will have to purchase an HDHomerun PRIME or wait for the new generation of tuners with built-in transcoders.
+No. Sorry. :(  The Dual (hdhr3-us) does not have the ability to stream over HTTP, and SiliconDust has said it will never be able to have this ability due to hardware limitations.  You will have to purchase an HDHomerun PRIME or wait for the new generation of tuners with built-in transcoders.
 

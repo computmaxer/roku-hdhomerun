@@ -3,56 +3,20 @@
 '*************************************************************
 
 Function displayVideo(channel As string, args As Dynamic)
-    print "Displaying video: "
+    print "Displaying video: " + channel
     p = CreateObject("roMessagePort")
     video = CreateObject("roVideoScreen")
     video.setMessagePort(p)
 
-    'bitrates  = [0]          ' 0 = no dots, adaptive bitrate
-    'bitrates  = [348]    ' <500 Kbps = 1 dot
-    'bitrates  = [664]    ' <800 Kbps = 2 dots
-    'bitrates  = [996]    ' <1.1Mbps  = 3 dots
-    'bitrates  = [2048]    ' >=1.1Mbps = 4 dots
-    bitrates  = [0]    
-
     baseUrl = "http://" + RegRead("server_address", "preferences") +":" + RegRead("server_port", "preferences")
     url = baseUrl + "/channels/" + channel + ".m3u8"
-    urls = [url]
-    qualities = ["SD"]
-    streamformat = "hls"
-    title = "Test TV"
-    srt = invalid
-
-    if type(args) = "roAssociativeArray"
-        if type(args.url) = "roString" and args.url <> "" then
-            urls[0] = args.url
-        end if
-        if type(args.StreamFormat) = "roString" and args.StreamFormat <> "" then
-            StreamFormat = args.StreamFormat
-        end if
-        if type(args.title) = "roString" and args.title <> "" then
-            title = args.title
-        else 
-            title = ""
-        end if
-        if type(args.srt) = "roString" and args.srt <> "" then
-            srt = args.StreamFormat
-        else 
-            srt = ""
-        end if
-    end if
     
     videoclip = CreateObject("roAssociativeArray")
-    videoclip.StreamBitrates = bitrates
-    videoclip.StreamUrls = urls
-    videoclip.StreamQualities = qualities
-    videoclip.StreamFormat = StreamFormat
-    videoclip.Title = title
-    
-    if srt <> invalid and srt <> "" then
-        videoclip.SubtitleUrl = srt
-    end if
-    
+    videoclip.StreamBitrates = [0]   'adaptive bitrate
+    videoclip.StreamUrls = [url]
+    videoclip.StreamQualities = ["HD"]
+    videoclip.StreamFormat = "hls"
+    videoclip.Title = channel
     video.SetContent(videoclip)
     video.show()
 

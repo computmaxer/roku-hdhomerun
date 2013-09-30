@@ -13,11 +13,11 @@ The HDHomerun PRIME (hdhr3-cc) supports HTTP Live Streaming (HLS).  Unfortunatel
  * [Wallop](https://github.com/maddox/wallop) installed and running on a some machine/server.
  * Roku
 
- #Add The Channel#
+#Add The Channel#
  Here is the link to the [private channel](https://owner.roku.com/add/rokuhdhr).  I plan to make this a public channel eventually.
 
 #Future Plans#
-SiliconDust, the creaters of the HDHomerun have announce a new generation of network TV tuners, hdhr4, that have built-in transcoders.  Once these devices are avaiable, we will be able to skip the Wallop step and stream directly from the tuner to the Roku.  I plan to add this functionality to this Roku application as soon as the devices are available and I can get my hands on one.  Once this happens, I think I can justify making this a Public Roku channel.
+SiliconDust has announced a new generation of network TV tuners, hdhr4, that have built-in transcoders.  Once these devices are avaiable, we will be able to skip the Wallop step and stream directly from the tuner to the Roku.  I plan to add this functionality to this Roku application as soon as the devices are available and I can get my hands on one.  Once this happens, I think I can justify making this a Public Roku channel.
 
 #FAQ#
 

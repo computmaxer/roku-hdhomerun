@@ -80,16 +80,16 @@ Sub initTheme()
     theme.CounterSeparator          = "#999999"
     theme.CounterTextRight          = "#999999"
     
-    theme.GridScreenLogoHD          = "pkg:/images/Overhang_Test_HD.png"
+    theme.GridScreenLogoHD          = "pkg:/images/hdhomerun_banner_hd.png"
 
     theme.GridScreenLogoOffsetHD_X  = "0"
-    theme.GridScreenLogoOffsetHD_Y  = "0"
-    theme.GridScreenOverhangHeightHD = "99"
+    theme.GridScreenLogoOffsetHD_Y  = "8"
+    theme.GridScreenOverhangHeightHD = "90"
 
-    theme.GridScreenLogoSD          = "pkg:/images/Overhang_Test_SD43.png"
-    theme.GridScreenOverhangHeightSD = "66"
+    theme.GridScreenLogoSD          = "pkg:/images/hdhomerun_banner_sd.png"
+    theme.GridScreenOverhangHeightSD = "60"
     theme.GridScreenLogoOffsetSD_X  = "0"
-    theme.GridScreenLogoOffsetSD_Y  = "0"
+    theme.GridScreenLogoOffsetSD_Y  = "6"
     
     app.SetTheme(theme)
 

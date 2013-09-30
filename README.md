@@ -3,7 +3,7 @@ Roku-HDHomerun
 
 Watch TV on your Roku using your HDHomerun PRIME and Wallop!
 
-The HDHomerun PRIME (hdhr3-cc) supports HTTP Live Streaming (HLS).  Unfortunately it is an MPEG2 stream and the Roku cannot decode it.  Fortunately, [maddox](https://github.com/maddox) has created a transcoding application called [Wallop](https://github.com/maddox/wallop) to convert the MPEG2 stream to H.264 and serve it up live over HLS using ffmpeg.  Thanks to his work, I was able to easily create a Roku app to stream from [Wallop](https://github.com/maddox/wallop).
+The HDHomerun PRIME (hdhr3-cc) supports streaming over HTTP.  Unfortunately it is an MPEG2 stream and the Roku cannot decode it.  Fortunately, [maddox](https://github.com/maddox) has created a transcoding application called [Wallop](https://github.com/maddox/wallop) to convert the MPEG2 stream to H.264 and serve it up live over HLS using ffmpeg.  Thanks to his work, I was able to easily create a Roku app to stream from [Wallop](https://github.com/maddox/wallop).
 
 ![Screenshot](http://i.imgur.com/GJUiye0.png)
 
@@ -23,5 +23,5 @@ SiliconDust has announced a new generation of network TV tuners, hdhr4, that hav
 #FAQ#
 
 ###Does this work with the HDHomerun Dual TV tuner?###
-No. Sorry. :(  The Dual (hdhr3-us) does not have the ability to do HLS streaming, and SiliconDust has said it will never be able to have this ability due to hardware limitations.  You will have to purchase an HDHomerun PRIME or wait for the new generation of tuners with built-in transcoders.
+No. Sorry. :(  The Dual (hdhr3-us) does not have the ability to stream over HTTP, and SiliconDust has said it will never be able to have this ability due to hardware limitations.  You will have to purchase an HDHomerun PRIME or wait for the new generation of tuners with built-in transcoders.
 

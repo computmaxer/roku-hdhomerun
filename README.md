@@ -19,6 +19,9 @@ The HDHomerun PRIME (hdhr3-cc) supports streaming over HTTP.  Unfortunately it i
  * Enter the Wallop server information on the Settings page. (NOT the HDHomerun address)
  * Sit back and enjoy live TV on your Roku.
 
+##Channel Logos##
+Wallop has the ability to serve up channel logos for each of your channels.  I have included some logos sized appropriately for this Roku app in the `channel_logos` directory.  Copy these logos to your Wallop install and add each channel to your Wallop config, as described [here](https://github.com/maddox/wallop#network-logos). Please contribute more logos if you create them for your setup!  The proper image size is 210x270.
+
 ##Future Plans##
 SiliconDust has announced a new generation of network TV tuners, hdhr4, that have built-in transcoders.  Once these devices are avaiable, we will be able to skip the Wallop step and stream directly from the tuner to the Roku.  I plan to add this functionality to this Roku application as soon as the devices are available and I can get my hands on one.  Once this happens, I think I can justify making this a Public Roku channel.
 

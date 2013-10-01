@@ -108,6 +108,8 @@ Function getShowsForCategoryItem(category As Object) As Object
         showList = [
             {
               Title: "Settings",
+              HDPosterUrl: "pkg:/images/settings.png",
+              SDPosterUrl: "pkg:/images/settings.png"  
             }
         ]
     else if category = "Favorites" then

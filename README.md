@@ -33,3 +33,6 @@ No. Sorry. :(  The Dual (hdhr3-us) does not have the ability to stream over HTTP
 
 ###Can you make a Plex channel?###
 I am going to take a look and see if I can use the same techniques to make this work on a Plex channel as well.  Ideally we would use Plex's transcoder instead of Wallop, but Plex's transcoder currently does not support live streams of any kind.
+
+###Does it have a channel guide/schedule?###
+No. This is something I am looking into.  If you know of any free/open APIs where I can get that information for, say, a zip-code, please let me know!

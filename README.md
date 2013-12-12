@@ -1,3 +1,5 @@
+*Check out the most recent updates on the [wiki](git@github.com:computmaxer/roku-hdhomerun.wiki.git).*
+
 Roku-HDHomerun
 ==============
 

@@ -28,6 +28,7 @@ Function displayVideo(channel As string, args As Dynamic)
         if type(msg) = "roVideoScreenEvent"
             if msg.isScreenClosed() then 'ScreenClosed event
                 print "Closing video screen"
+                stopChannel(channel)
                 exit while
             else if msg.isPlaybackPosition() then
                 nowpos = msg.GetIndex()

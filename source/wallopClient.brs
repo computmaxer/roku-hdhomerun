@@ -61,6 +61,13 @@ function tuneChannel(channelNum As string)
 
 End Function
 
+' Tells Wallop to stop the specified channel number.
+function stopChannel(channelNum As string)
+    request = CreateObject("roUrlTransfer")
+    url = getBaseWallopUrl() + "/channels/" + channelNum + "/stop"
+    request.SetUrl(url)
+    request.PostFromString("")
+End Function
 
 ' Simple helper method for building the Wallop server 
 ' path defined in the user settings

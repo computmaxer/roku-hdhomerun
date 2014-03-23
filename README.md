@@ -13,8 +13,8 @@ The HDHomerun PRIME (hdhr3-cc) and PLUS (hdtc-2us) support streaming over HTTP. 
 
 
 ##What You Need##
- * HDHomerun PRIME (hdhr3-cc) OR HDHomerun PLUS (hdtc-2us)
- * [Wallop](https://github.com/maddox/wallop) (for PRIME) OR [Ply](https://github.com/themacks/ply) (for PLUS) installed and running on a some machine/server.
+ * HDHomerun PRIME (hdhr3-cc) or HDHomerun PLUS (hdtc-2us)
+ * [Wallop](https://github.com/maddox/wallop) (for PRIME) or [Ply](https://github.com/themacks/ply) (for PLUS) installed and running on a some machine/server.
  * Roku
 
 

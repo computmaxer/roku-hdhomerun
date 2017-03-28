@@ -12,32 +12,32 @@ The HDHomerun PRIME (hdhr3-cc) and PLUS (hdtc-2us) support streaming over HTTP. 
 ![Screenshot](http://i.imgur.com/GJUiye0.png)
 
 
-##What You Need##
+## What You Need
  * HDHomerun PRIME (hdhr3-cc) or HDHomerun PLUS (hdtc-2us)
  * [Wallop](https://github.com/maddox/wallop) (for PRIME) or [Ply](https://github.com/themacks/ply) (for PLUS) installed and running on a some machine/server.
  * Roku
 
 
-##I have that stuff, what's next?##
+## I have that stuff, what's next?
  * Add the channel. Here is the link to the [private channel](https://owner.roku.com/add/rokuhdhr).
  * Enter the Wallop/Ply server information on the Settings page. (NOT the HDHomerun address)
  * Sit back and enjoy live TV on your Roku.
 
-##Channel Logos##
+## Channel Logos
 Wallop has the ability to serve up channel logos for each of your channels.  I have included some logos sized appropriately for this Roku app in the `channel_logos` directory.  Copy these logos to your Wallop install and add each channel to your Wallop config, as described [here](https://github.com/maddox/wallop#network-logos). Please contribute more logos if you create them for your setup!  The proper image size is 210x270.
 
-##Future Plans##
+## Future Plans
 Currently waiting for Roku to support .ts containers (live streams).
 Follow the updates on the [wiki](https://github.com/computmaxer/roku-hdhomerun/wiki/News-and-Updates).
 
-##FAQ##
+## FAQ
 
-###Does this work with the HDHomerun Dual TV tuner?###
+### Does this work with the HDHomerun Dual TV tuner?
 No. Sorry. :(  The Dual (hdhr3-us) does not have the ability to stream over HTTP, and SiliconDust has said it will never be able to have this ability due to hardware limitations.  You will have to purchase a newer HDHomerun device.
 
 
-###Can you make a Plex channel?###
+### Can you make a Plex channel?
 I am going to take a look and see if I can use the same techniques to make this work on a Plex channel as well.  Ideally we would use Plex's transcoder instead of Wallop, but Plex's transcoder currently does not support live streams of any kind.
 
-###Does it have a channel guide/schedule?###
+### Does it have a channel guide/schedule?
 No. This is something I am looking into.  If you know of any free/open APIs where I can get that information for, say, a zip-code, please let me know!
